@@ -1,32 +1,27 @@
 <script>
-import AppTitle from "./components/AppTitle.vue"
-import AppHero from "./components/AppHero.vue"
+import { store } from './store';
+import AppMain from "./components/AppMain.vue";
 
 export default {
-  components: {
-    AppTitle,
-    AppHero,
-  },
-
+  name: "App",
   data() {
     return {
     }
+  },
+  components: {
+    AppMain,
+  },
+  methods: {
   }
-}
+};
 </script>
 
 <template>
   <div class="container">
-    <AppTitle />
-    <AppHero />
+    <AppMain />
   </div>
 </template>
 
 <style>
-
-body {
-  background-image: url('https://cdn.pixabay.com/photo/2012/08/25/22/22/saturn-54999_960_720.jpg');
-  background-size: cover;
-}
-
+@import './style/main';
 </style>
