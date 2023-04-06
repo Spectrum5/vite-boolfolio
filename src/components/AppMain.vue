@@ -38,7 +38,7 @@ export default {
 <template>
     <main>
         <div class="container">
-            <div class="row mb-4">
+            <div class="row">
                 <div class="col">
                     <div v-for="i in lastPage" style="display: inline-block;">
                         <button @click="changePage(i)">
@@ -47,7 +47,7 @@ export default {
                     </div>
                 </div>
             </div>
-            <div class="row mb-4">
+            <div class="row">
                 <div v-for="post in posts" class="col-12 col-sm-4 col-md-3">
                     <div>
                         <h2>
