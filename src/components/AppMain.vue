@@ -40,7 +40,7 @@ export default {
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <div v-for="i in lastPage" style="display: inline-block;">
+                    <div v-for="i in lastPage" class="d-flex">
                         <button @click="changePage(i)">
                             Pagina {{ i }}
                         </button>
@@ -83,4 +83,8 @@ export default {
     </main>
 </template>
 
-<style scoped></style>
+<style scoped>
+img {
+    height: 100px;
+}
+</style>
