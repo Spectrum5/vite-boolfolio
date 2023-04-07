@@ -1,5 +1,7 @@
 <script>
-import AppMain from "./components/AppMain.vue"
+import { store } from './store';
+import AppHeader from './components/AppHeader.vue';
+import AppFooter from './components/AppFooter.vue';
 
 export default {
   name: "App",
@@ -8,7 +10,8 @@ export default {
     }
   },
   components: {
-    AppMain,
+    AppHeader,
+    AppFooter
   },
   methods: {
   }
@@ -17,10 +20,14 @@ export default {
 
 <template>
   <div class="container">
-    <AppMain />
+    <AppHeader />
+    <main>
+        <router-view></router-view>
+    </main>
+    <AppFooter />
   </div>
 </template>
 
-<style>
-/* @import './style/main'; */
+<style lang="scss">
+@import './styles/main';
 </style>
